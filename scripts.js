@@ -74,7 +74,7 @@ const product_8 = {
     Description: "Lorem ipsum dolor sit amet, et consectetur adipiscing elit."
 }
 const product_9 = {
-    Title: "Gourmet Chocolate",
+    Title: "Chocolate",
     Price: "$8.99",
     Photo: "assets/images/products/gift-gourmet-chocolate.jpg",
     Category: "gifts",
@@ -182,13 +182,17 @@ const productSection = document.getElementById('product-list');
 function generateProductCard(product) {
     //container
     const card = document.createElement('div');
-    card.className = 'product-card col-lg-2 col-md-4 col-sm-6';
+    card.className = 'holder col-lg-2 col-md-6 col-sm-12';
+
+    const holder = document.createElement('div');
+    holder.className = 'product-card';
 
     //image div
     const imageDiv = document.createElement('div');
     imageDiv.className = 'product-image';
 
     const image = document.createElement('img');
+    image.className = 'product-photo';
     image.src = product.Photo;
     image.alt = product.Title;
 
@@ -220,9 +224,11 @@ function generateProductCard(product) {
 
     descDiv.appendChild(description);
 
-    card.appendChild(imageDiv);
-    card.appendChild(infoDiv);
-    card.appendChild(descDiv);
+    holder.appendChild(imageDiv);
+    holder.appendChild(infoDiv);
+    holder.appendChild(descDiv);
+
+    card.appendChild(holder);
 
     return card;
 }
@@ -266,10 +272,3 @@ categoryButtons.forEach(button => {
         }
     });
 });
-
-
-
-  
-  
-
-

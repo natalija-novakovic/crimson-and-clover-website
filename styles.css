@@ -488,10 +488,6 @@ input[type="number"] {
     font-size: 1.3rem;
 }
 
-.insta-gallery img {
-    width: 75px;
-}
-
 
 /************************************************************************/
 /* GALLERY */
@@ -614,6 +610,11 @@ input[type="number"] {
 
 .contact-us-form input, .contact-us-form textarea, .contact-us-form button {
     margin: 2% 0;
+    padding: 1%;
+}
+
+.contact-us-form button {
+    padding: 3%;
 }
 
 .info:last-child {
@@ -752,6 +753,15 @@ input[type="number"] {
     }    
 
     /* Products List */
+
+    .category-options {
+        flex-direction: column;    
+    }
+
+    .category-options button {
+        margin: 1% 0;
+    }
+
     .category-btn {
         width: 100%;
         margin: 5% 0;
