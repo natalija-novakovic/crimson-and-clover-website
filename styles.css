@@ -1,0 +1,773 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Amalfi_Coast';
+    src: url(assets/fonts/Amalfi_Coast.ttf);
+}
+
+@font-face {
+    font-family: 'Butler';
+    src: url(assets/Fonts/Butler_Bold.otf);
+}
+
+@font-face {
+font-family: 'Jost-VariableFont_wght';
+src: url(assets/Fonts/Jost-VariableFont_wght.ttf);
+}
+
+/* GENERAL */
+
+h1 {
+    font-family: 'Butler';
+    font-size: 3.125rem;
+    color: black;
+}
+
+h2 {
+    font-family: 'Butler';
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 4%;
+}
+
+h3 {
+    font-family: 'Butler';
+    font-size: 1.875rem;
+    color: black;
+    margin-bottom: 4%;
+}
+
+h4 {
+    font-family: 'Butler', serif;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.accent {
+    font-family: 'Amalfi_Coast', cursive;
+    font-size: 1.563rem;
+    color: black;
+}
+
+p {
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    line-height: 23.12px;
+}
+
+p .bold {
+    font-weight: 600;
+}
+
+.body-txt {    
+    font-size: 1rem;
+    color: black;
+}
+
+button {
+    background-color: #949D82;
+    color: white;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-weight: 500;
+    padding: 3% 9%;
+    border: none;
+    outline: 1px solid white;
+    outline-offset: -5px;
+}
+
+button:hover {
+    background-color: #BE9195;
+}
+
+.gallery img, #new-in img {
+    width: 100%;
+    height: auto;
+}
+
+.hero_styles {
+    background-color: #949D82;
+    padding: 4% 0 4% 0; 
+}
+
+.hero_styles h1 {
+    text-align: center;  
+    color: white;
+}
+
+/* HEADER */
+
+#top-bar, #bottom-bar {
+    background-color: #949D82;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
+}
+
+nav ul li  {
+    display: inline-block;  
+    padding: 0.5% 3% 0.5%;  
+} 
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: black;
+}
+
+nav ul li p:hover {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.navigation, .icons {
+    padding-top: 1%;
+}
+
+.fa-brands {
+    color:#949D82;
+    padding: 0 3% 0;  
+    font-size: 1.5rem;    
+}
+
+.fa-cart-shopping {
+    margin-left: 6%;
+}
+
+/* HERO */
+
+#hero {
+    background-image: url(assets/images/02-hero-b.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0 0 25%;
+}
+
+#hero .content {
+    padding: 15% 6% 15% 0;
+}
+
+.icons i:hover {
+    color: #BE9195;
+}
+
+/* ABOUT */
+
+.about-content {
+    padding: 7% 3%;
+}
+
+.about-content, .about-content .accent {        
+    text-align: center;             
+}
+
+.about-content p {
+    text-align: left;
+}
+
+.gallery {
+    padding: 3% 0;
+}
+
+/* SELECTION */
+
+#selection {
+    text-align: center;
+    background-image: url(assets/images/05-selection-bg.png);
+    background-position: center top;
+    padding-bottom: 4%;
+}
+
+#selection img {
+    border-radius: 7% 0 7% 0;
+    margin-bottom: 4%;
+    width: 100%;
+}
+
+.centered-title {
+    padding: 0 24%;
+}
+
+#selection a {
+    text-decoration: none;
+    color: white;
+}
+/* NEW IN */
+
+#new-in {    
+    background-color: #2A2F2B;
+}
+
+#new-in p, h3 {
+    color: white;    
+}
+
+#new-in .accent, h3 {
+    text-align: center;
+}
+
+.invitations {
+    background-color: #D9D9D9;
+}
+
+/* MAILING LIST */
+
+#mailing-list {
+    padding: 4% 0;
+    text-align: center;
+    background-color: #949D82;
+}
+
+#mailing-list .accent, #mailing-list .body-txt {
+    color:white;
+}
+
+#mailing-list .body-txt {
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.445rem;
+}
+
+#input-email {
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    color: #808080;
+    width: 20%;
+    padding: 0.5%;
+    border: none;
+}
+
+#sign-up {
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: black;
+    background-color: #CDCEBE;
+    border: none;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    padding: 0.6% 2%;
+    position: relative;
+    top: 0.4px;
+}
+
+#sign-up:hover {
+    background-color:#BE9195;
+}
+
+/* BLOG */
+
+#blog {
+    padding: 4% 0;
+}
+
+#blog img {
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+#blog h4 {
+    margin: 3% 0;
+}
+
+#blog .accent, #blog h2 {
+    text-align: center;
+}
+
+.details {
+    position: relative;
+}
+
+.date, .likes {
+    display: inline-block;
+    color:#808080;
+}
+
+.likes {
+    position: absolute;
+    right: 0;
+}
+
+#blog a {
+    text-decoration: none;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+a.read-more:hover i.fa-solid {
+    transform: translate(5px);
+}
+  
+
+/* FOOTER */
+
+footer {
+    background-color: #2A2F2B;
+    padding: 3% 0 3% 0;      
+    clear: both;
+}
+
+footer .body-txt {
+    color: white;
+}
+
+footer h4 {
+    color: white;
+    text-align: center;
+    margin: 0 0 6% 0;
+}
+
+.tagline {
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    line-height: 23.12px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: white;
+    margin: 10% 0;
+}
+
+.socials-footer:nth-child(1) {
+    padding-left: 0;
+}
+
+.socials-footer i:hover {
+    color: #BE9195;
+}
+
+.working-hours {  
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    line-height: 23.12px;      
+    font-size: 1rem;
+    color: white;   
+}
+
+.insta-gallery img:hover {
+    filter: brightness(70%);
+}
+
+/************************************************************************/
+/* MAKE YOUR OWN PAGE */
+article {
+    background-image: url(assets/images/process-bg-2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+#hero_make-your-own {
+    /* background-image: url(assets/images/hero_make-your-own_bg-2.jpg);
+    background-size: cover;
+    background-position: center;   */
+    background-color: #949D82;
+    padding: 4% 0 4% 0; 
+}
+
+#hero_make-your-own h1 {
+    text-align: center;  
+    color: white;
+}
+
+.make-your-own .container .row {
+    position: relative;
+}
+
+
+.main-content {
+    padding: 3% 3%;
+}
+
+.instructions h3 {
+    color: #BE9195;
+    text-align: left;
+}
+
+.instructions img {
+    width: 100%;
+    height: auto;
+}
+
+#process .container {
+    padding: 0;
+}
+
+form {
+    padding: 0;
+}
+
+legend {
+    margin: 4% 0;
+}
+
+label {
+    font-size: 1rem;
+    color: black;    
+    margin-left: 2%;
+}
+
+input[type="number"] {
+    width: 70%;
+    padding: 1% 2%;
+    margin-top: 1%;
+}
+
+#submit {
+    background-color: #949D82;
+    color: white;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-weight: 500;
+    padding: 1% 3%;
+    border: none;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    margin-top: 1%;
+}
+
+#reset {
+    background-color: #BE9195;
+    color: white;
+    font-family: 'Jost-VariableFont_wght', sans-serif;
+    font-weight: 500;
+    padding: 1% 3%;
+    border: none;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    margin-top: 1%;
+    position: relative;
+    top: 1px;
+}
+
+#submit:hover {
+    background-color: #6e775b;
+}
+
+#reset:hover {
+    background-color: #9e6d71;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.column-20 {
+    width: 20%;
+    min-height: 700px;
+    background-image: url(assets/images/make-your-own-aside.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.column-80 {
+    width: 80%;
+}
+
+#order-roses img, #order-lilies img, #order-gerberas img {
+    width: 40px;
+    margin:  0.5% 0.5%;    
+}
+
+#discount-price {
+    font-size: 1.3rem;
+}
+
+.insta-gallery img {
+    width: 75px;
+}
+
+
+/************************************************************************/
+/* GALLERY */
+#masonry-gallery {
+    padding: 3% 0;
+}
+
+#masonry-gallery img {
+    cursor: pointer;
+}
+
+#masonry-gallery img:hover {
+    filter: brightness(70%);
+}
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+   @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+   @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /* POP-UP */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.popup img {
+    max-width: 100%;
+    max-height: 90vh;
+}
+
+.close-popup {
+    position: absolute;
+    top: -9px;
+    right: 4px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998;
+}
+
+/* CONTACT US */
+#contact-us {
+    padding: 3% 0;
+}
+
+#contact-us h2 {
+    color: black;
+    margin-bottom: 3%;
+}
+
+#contact-us .accent, #contact-us h2 {
+    text-align: center;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-items {
+    padding: 0 0 3% 0;
+}
+
+.info i {
+    margin-right: 1%;
+}
+
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-us-form input, .contact-us-form textarea, .contact-us-form button {
+    margin: 2% 0;
+}
+
+.info:last-child {
+    text-align: center;
+}
+
+.info img {
+    margin-top: 10%;
+}
+
+
+
+/************************************************************************/
+/* RESPONSIVE */
+
+/* Mobilni */
+@media only screen and (max-width: 999px) {
+    h2 {
+        font-size: 1.7rem;
+        margin-top: 4%;
+    }
+    
+    .logo {
+        text-align: center;
+        margin-bottom: 2%;
+    }  
+    
+    /* nav ul li {
+        display: none;
+    } */
+
+    .icons {
+        text-align: center;
+    }
+
+    #hero {        
+        background-image: linear-gradient(rgba(148, 157, 130), rgba(255, 255, 255, 0.7)), url(assets/images/02-hero-c.jpg);
+        background-position: center top;
+        border-radius: 0;
+        
+       
+    }        
+
+    #hero .content {
+        padding: 15% 6% 15% 6%;
+    }
+
+    #hero .accent, #hero h1 {
+        text-align: center;
+    }
+    
+    .gallery img {
+        text-align: center;
+    }   
+
+    .centered-title {
+        padding: 0;
+    }
+
+    .features {
+        margin-bottom: 6%;
+    }
+
+    #new-in .content {
+        padding-top: 10%;
+    }
+
+    #mailing-list {
+        padding: 11% 2%;
+    }
+    
+    #input-email {
+        width: 60%;
+    }
+
+    #blog {
+        padding: 10% 0;
+    }
+
+    .posts {
+        margin-bottom: 4%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10% 0;
+    }
+
+    .hours {
+        display: none;
+    }
+
+    .socials-footer {
+        margin: 10% 0;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu p {
+        margin: 0;
+    }
+    
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .nav-toggle i {
+        font-size: 1.5rem;
+        color: black;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    i.fa-bars {
+        position: absolute;
+        right: 4%;
+        top: 8%;
+    }
+
+    nav ul li {
+        display: block;
+        border: 0.5px solid black;
+        border-collapse: collapse;
+        text-align: center;
+        margin: 3%;
+        padding: 1%;
+    }
+
+    ul.nav-menu.active {
+        padding-left: 0;
+    }    
+
+    /* Products List */
+    .category-btn {
+        width: 100%;
+        margin: 5% 0;
+    }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1000px) {
+    #new-in .content {
+        padding: 5% 5% 5% 0;
+        
+    } 
+
+    .nav-toggle {
+        display: none;
+    }
+    
+}
