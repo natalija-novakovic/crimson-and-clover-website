@@ -97,6 +97,28 @@ button:hover {
     color: white;
 }
 
+/* BACK TO TOP BUTTON */
+
+#topBtn {
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #BE9195; 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
 /* HEADER */
 
 #top-bar, #bottom-bar {
@@ -117,6 +139,10 @@ ul {
     margin: 0;
 }
 
+ul p {
+    margin-bottom: 0;
+}
+
 nav ul li  {
     display: inline-block;  
     padding: 0.5% 3% 0.5%;  
@@ -133,6 +159,10 @@ nav ul li a {
 nav ul li p:hover {
     border-bottom: 1px solid black;
     color: black;
+}
+
+nav i {
+    cursor: pointer;
 }
 
 .navigation, .icons {
@@ -207,6 +237,7 @@ nav ul li p:hover {
     text-decoration: none;
     color: white;
 }
+
 /* NEW IN */
 
 #new-in {    
@@ -349,6 +380,7 @@ footer h4 {
 
 .socials-footer i:hover {
     color: #BE9195;
+    cursor: pointer;
 }
 
 .working-hours {  
@@ -358,74 +390,22 @@ footer h4 {
     color: white;   
 }
 
+ul.insta {
+    padding-left: 0;
+}
+
+.insta li {
+    list-style-type: none;
+    margin: 0.8%;
+    box-sizing: border-box;
+    float: left;
+}
+ 
+
 .insta-gallery img:hover {
     filter: brightness(70%);
 }
 
-/************************************************************************/
-/* MAKE YOUR OWN PAGE */
-article {
-    background-image: url(assets/images/process-bg-2.png);
-    background-position: right;
-    background-repeat: no-repeat;
-
-}
-
-#hero_make-your-own {
-    /* background-image: url(assets/images/hero_make-your-own_bg-2.jpg);
-    background-size: cover;
-    background-position: center;   */
-    background-color: #949D82;
-    padding: 4% 0 4% 0; 
-}
-
-#hero_make-your-own h1 {
-    text-align: center;  
-    color: white;
-}
-
-.make-your-own .container .row {
-    position: relative;
-}
-
-
-.main-content {
-    padding: 3% 3%;
-}
-
-.instructions h3 {
-    color: #BE9195;
-    text-align: left;
-}
-
-.instructions img {
-    width: 100%;
-    height: auto;
-}
-
-#process .container {
-    padding: 0;
-}
-
-form {
-    padding: 0;
-}
-
-legend {
-    margin: 4% 0;
-}
-
-label {
-    font-size: 1rem;
-    color: black;    
-    margin-left: 2%;
-}
-
-input[type="number"] {
-    width: 70%;
-    padding: 1% 2%;
-    margin-top: 1%;
-}
 
 #submit {
     background-color: #949D82;
@@ -479,17 +459,6 @@ input[type="number"] {
     width: 80%;
 }
 
-#order-roses img, #order-lilies img, #order-gerberas img {
-    width: 40px;
-    margin:  0.5% 0.5%;    
-}
-
-#discount-price {
-    font-size: 1.3rem;
-}
-
-
-/************************************************************************/
 /* GALLERY */
 #masonry-gallery {
     padding: 3% 0;
@@ -739,6 +708,10 @@ input[type="number"] {
         top: 8%;
     }
 
+    nav ul li p:hover {
+        border-bottom: none;
+    }
+
     nav ul li {
         display: block;
         border: 0.5px solid black;
@@ -751,6 +724,10 @@ input[type="number"] {
     ul.nav-menu.active {
         padding-left: 0;
     }    
+
+    #topBtn {
+        display: none!important;
+    }
 
     /* Products List */
 
